@@ -21,7 +21,7 @@ rgl.clear()  ## rerun the cycle from clear to widget in browser contexts
 plot3d(p_mesh)
 bg3d("black"); material3d(specular = "black")
 aspect3d(1, 1, .1)
-#dir.create("demo01")
-fdemo1 <- file.path(getwd(), "demo01/demo01.html")
+
+fdemo1 <- file.path(getwd(), "demo01.html")
 
 htmlwidgets::saveWidget(rglwidget(), fdemo1)
