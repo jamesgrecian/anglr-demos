@@ -4,6 +4,9 @@ library(reproj); library(htmlwidgets)
 clear3d()
 
 ## longlat extent, and local projection for the scene
+## IF YOU MODIFY THIS, unset the tweaked zoom levels below in cc_elevation() and cc_location()
+## see what they report as chosen by default, then ramp up the zoom (especially for the imagery
+## by a couple of steps)
 ex0 <- c(147.15, 147.45, -42.9, -42.6)
 ex <- extent(ex0)
 
